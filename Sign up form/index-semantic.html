@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding School Signup Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4; /*light gray*/
+        margin: 0; /*all margins (Top,Right,Bottom and left) of the element are set to 0. Normally, elements have default margins applied by browsers (often around 8px). Setting margin: 0; explicitly removes these default margins*/
+        padding: 20px;
+        /*to center the form vertically and horizontally within the viewport*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*to center the form vertically and horizontally within the viewport*/
+        height: 100vh; /*Sets the body height to 100% of the viewport height (vh), ensuring the form is centered vertically.*/
+      }
+      form {
+        background-color: #fff; /*White*/
+        padding: 20px; /*Padding creates extra space within an element. In contrast, margin creates extra space around an element.*/
+        width: 100%;
+        max-width: 400px;
+      }
+      h1 {
+        text-align: center; /*Centers the text horizontally within its container (in this case, the <form>).*/
+        color: darkblue;
+        font-size: 2em;
+        font-weight: bold;
+      }
+      fieldset {
+        border: none;
+        padding: 0;
+        margin: 0 0 20px; /*Adds bottom margin (20px) to create space between <fieldset> elements. (top-right-bottom-left)*/
+      }
+      legend {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: darkblue;
+      }
+      label {
+        display: block; /* causing each label to start on a new line and take up the full width available*/
+        margin-bottom: 8px;
+        color: blue;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="password"],
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #4260e7;
+        border-radius: 5px;
+        font-size: 1em;
+        box-sizing: border-box; /*Ensures that padding and border are included in the element's total width and height*/
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer; /*when the mouse pointer is over an element*/
+        font-size: 1em;
+      }
+      button:hover {
+        background-color: #448847;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      #bootcamp {
+        color: rgb(30, 18, 133);
+        padding: 10px;
+        text-align: start;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Signup for Coding School</h1>
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="telephone">Telephone:</label>
+          <input type="tel" id="telephone" name="telephone" required />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Details</legend>
+        <div class="form-group">
+          <label for="bootcamp">Bootcamp of Interest:</label>
+          <select id="bootcamp" name="bootcamp" required>
+            <option value="">-- Please Select --</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="UX/UI Design">UX/UI Design</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </div>
+      </fieldset>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Adoption Agency</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Find Your Furry Friend!</h1>
+    <p>Connecting loving families with adorable pups. Adopt your new best friend today!</p>
+  </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p>At Find Your Furry Friend, our mission is to create a loving home for every dog. We believe every pup deserves a
+      family that cares, and we work tirelessly to match these wonderful animals with the perfect forever homes.</p>
+    <p>Our vision is a world where every dog is cherished and loved. We strive to educate the community on the
+      importance of adoption and responsible pet ownership, ensuring a better life for dogs and their human companions.
+    </p>
+  </section>
+
+
+  <section>
+    <h2>Why Adopt From Us?</h2>
+    <ul>
+      <li>Comprehensive Veterinary Checks</li>
+      <li>Behavioral Training for All Dogs</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Meet Our Dogs</h2>
+    <!-- This class is used for the container that holds all the cards. It applies flexbox properties to arrange the cards. -->
+    <div class="card-container"> 
+      <!-- This class is applied to each card. It sets the width, margin, box-shadow, border-radius, and overflow properties. -->
+      <article class="card">
+        <figure>
+          <img src="https://placedog.net/400/532?id=18" alt="Dog 1" />
+          <figcaption>Photo by <a href="https://www.pexels.com/@iamjaysonlorenzo" target="_blank">Jayson Lorenzo</a>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="card">
+        <figure><img src="https://placedog.net/400/299?id=206" alt="Dog 2" />
+          <figcaption>Photo by <a href="https://www.pexels.com/@kateryna-babaieva-1423213" target="_blank">Kateryna Babaieva</a>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="card">
+        <figure>
+          <img src="https://placedog.net/400/566?id=180" alt="Dog 3" />
+          <figcaption>Photo by <a href="https://www.pexels.com/@eddie-galaxy-727497" target="_blank">Eddie Galaxy</a>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="card">
+        <figure>
+          <img src="https://placedog.net/400/388?id=91" alt="Dog 4" />
+          <figcaption>Photo by <a href="https://www.pexels.com/@jagheterjohann" target="_blank">Johann</a>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="card">
+        <figure>
+          <img src="https://placedog.net/400/172?id=123" alt="Dog 5" />
+          <figcaption>Photo by <a href="https://www.pexels.com/@pixabay" target="_blank">Pixabay</a>
+          </figcaption>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Get in Touch</h2>
+    <form action="submit-form.php" method="dialog">
+      <!--The <fieldset> tag is used to group related elements in a form.-->
+        <!--The <fieldset> tag draws a box around the related elements.-->
+      <fieldset> 
+        <!--The <legend> tag defines a caption for the <fieldset> element.-->
+        <legend>Contact Form</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br /><br />
+        <fieldset>
+          <legend>Do you agree to the terms?</legend>
+          <label><input type="radio" name="radio" value="yes" /> Yes</label>
+          <label><input type="radio" name="radio" value="no" /> No</label>
+        </fieldset>
+        <button type="submit">Send</button>
+      </fieldset>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Dog Adoption Agency.</p>
+  </footer>
+</body>
+
+</html>

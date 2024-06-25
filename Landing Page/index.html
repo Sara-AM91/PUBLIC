@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Adoption Agency</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .card {
+      width: 300px;
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-body {
+      padding: 10px;
+      text-align: right;
+    }
+
+    form {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Find Your Furry Friend!</h1>
+  <p>
+    Connecting loving families with adorable pups. Adopt your new best friend
+    today!
+  </p>
+
+  <section>
+    <h2>About Us</h2>
+    <p>
+      At Find Your Furry Friend, our mission is to create a loving home for
+      every dog. We believe every pup deserves a family that cares, and we
+      work tirelessly to match these wonderful animals with the perfect
+      forever homes.
+    </p>
+    <p>
+      Our vision is a world where every dog is cherished and loved. We strive
+      to educate the community on the importance of adoption and responsible
+      pet ownership, ensuring a better life for dogs and their human
+      companions.
+    </p>
+  </section>
+
+  <h2>Why Adopt From Us?</h2>
+  <ul>
+    <li>Comprehensive Veterinary Checks</li>
+    <li>Behavioral Training for All Dogs</li>
+  </ul>
+
+  <h2>Meet Our Dogs</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://placedog.net/400/532?id=18" alt="Dog 1" />
+      <div class="card-body p-1 text-end">
+        <small class="card-text">
+          Photo by
+          <a href="https://www.pexels.com/@iamjaysonlorenzo" class="text-dark fw-bold text-decoration-none"
+            target="_blank">Jayson Lorenzo</a>
+        </small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://placedog.net/400/299?id=206" alt="Dog 2" />
+      <div class="card-body p-1 text-end">
+        <small class="card-text">
+          Photo by
+          <a href="https://www.pexels.com/@kateryna-babaieva-1423213" class="text-dark fw-bold text-decoration-none"
+            target="_blank">Kateryna Babaieva</a>
+        </small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://placedog.net/400/566?id=180" alt="Dog 3" />
+      <div class="card-body p-1 text-end">
+        <small class="card-text">
+          Photo by
+          <a href="https://www.pexels.com/@eddie-galaxy-727497" class="text-dark fw-bold text-decoration-none"
+            target="_blank">Eddie Galaxy</a>
+        </small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://placedog.net/400/388?id=91" alt="Dog 4" />
+      <div class="card-body p-1 text-end">
+        <small class="card-text">
+          Photo by
+          <a href="https://www.pexels.com/@jagheterjohann" class="text-dark fw-bold text-decoration-none"
+            target="_blank">Johann</a>
+        </small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://placedog.net/400/172?id=123" alt="Dog 5" />
+      <div class="card-body p-1 text-end">
+        <small class="card-text">
+          Photo by
+          <a href="https://www.pexels.com/@pixabay" class="text-dark fw-bold text-decoration-none"
+            target="_blank">Pixabay</a>
+        </small>
+      </div>
+    </div>
+  </div>
+
+  <h2>Get in Touch</h2>
+  <form action="submit-form.php" method="dialog">
+    <fieldset>
+      <legend>
+        <h2>Contact Form</h2>
+      </legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br /><br />
+      <fieldset>
+        <legend>Do you agree to the terms?</legend>
+        <label><input type="radio" name="radio" value="yes" /> Yes</label>
+        <label><input type="radio" name="radio" value="no" /> No</label>
+      </fieldset>
+      <button type="submit">Send</button>
+    </fieldset>
+  </form>
+  <p>© 2024 Dog Adoption Agency.</p>
+</body>
+
+</html>
